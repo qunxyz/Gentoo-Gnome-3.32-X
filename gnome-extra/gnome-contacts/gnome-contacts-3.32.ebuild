@@ -65,3 +65,37 @@ src_configure() {
 	)
 	meson_src_configure
 }
+
+src_install() {
+	meson_src_install 
+	rm ${D}/usr/include/libhandy-0.0/hdy-action-row.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-arrows.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-column.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-combo-row.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-dialer-button.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-dialer-cycle-button.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-dialer.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-enum-value-object.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-enums.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-leaflet.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-search-bar.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-string-utf8.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-value-object.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-version.h
+	rm ${D}/usr/lib64/girepository-1.0/Handy-0.0.typelib
+	rm ${D}/usr/lib64/libhandy-0.0.so.0
+	rm ${D}/usr/lib64/pkgconfig/libhandy-0.0.pc
+	rm ${D}/usr/share/gir-1.0/Handy-0.0.gir
+	rm ${D}/usr/share/vala/vapi/libhandy-0.0.deps
+	rm ${D}/usr/share/vala/vapi/libhandy-0.0.vapi
+	rm ${D}/usr/include/libhandy-0.0/handy.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-dialog.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-expander-row.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-fold.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-header-group.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-list-box.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-main.h
+	rm ${D}/usr/include/libhandy-0.0/hdy-title-bar.h
+	rm ${D}/usr/lib64/libhandy-0.0.so
+	rm ${D}
+}
