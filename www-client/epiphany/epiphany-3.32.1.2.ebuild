@@ -17,7 +17,7 @@ KEYWORDS="amd64 ~arm ~ppc ~ppc64 ~sparc ~x86"
 COMMON_DEPEND="
 	>=dev-libs/glib-2.52.0:2[dbus]
 	>=x11-libs/gtk+-3.22.13:3
-	>=net-libs/webkit-gtk-2.21.92:4=
+	>=net-libs/webkit-gtk-2.23.90:4=
 	>=x11-libs/cairo-1.2
 	>=app-crypt/gcr-3.5.5:=[gtk]
 	>=x11-libs/gdk-pixbuf-2.36.5:2
